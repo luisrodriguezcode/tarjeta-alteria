@@ -76,3 +76,54 @@ body{
         font-size: 16px;
     }
 }
+.ecabezado {
+    margin-bottom: 30px;
+}
+.informacion h2 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.informacion p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #bfbfbf;
+}
+.enlaces a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease ;
+}
+.enlaces a:hover {
+    background-color: #383838;
+    border-color: #c0c0c0;
+    transform: translateY(-3px);
+}
+.enlaces a:active {
+    transform: scale(0.98);
+}
+@media (prefers-reduced-motion: reduce) {
+    .enlaces a {
+        transition: none;
+    }
+}
+.enlaces svg {
+    width: 24px;
+    height: 24px;
+    color: #c0c0c0;
+    flex-shrink: 0;
+}
+.pie-pagina {
+    margin-top: 35px;
+    padding: 20px;
+    border-top: 1px solid #555555;
+}
+.pie-pagina p {
+    color: #a0a0a0;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
